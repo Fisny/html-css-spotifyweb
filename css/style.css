@@ -7,6 +7,8 @@ body{
     color: white;
 }
 
+/*  */
+
 .app{
     max-height: 100vh;
 }
@@ -23,6 +25,7 @@ body{
 
 main .sidebar{
     background-color: rgb(19, 19, 19);
+    
 }
 
 main .content{
@@ -37,3 +40,13 @@ main .content{
     background-color: rgb(31, 29, 58);
     margin: 0 auto;
 }
+
+/*  */
+
+
+
+.sidebar ul{
+    width: 20px;
+    list-style-type: none;
+}
+
