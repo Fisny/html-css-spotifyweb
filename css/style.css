@@ -174,6 +174,12 @@ main .content{
     align-items: center;
 }
 
+.cover-container-2 img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
 .album-container:hover .cover-layover{
     opacity: 1;
 }
