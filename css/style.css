@@ -26,6 +26,8 @@ body{
 .app footer{
     height: 90px;
     background-color: rgb(66, 66, 66);
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 main .sidebar{
@@ -41,12 +43,11 @@ main .content{
 
 .example{
     width: 100%;
-    height: 200vh;
     background-color: rgb(31, 29, 58);
     margin: 0 auto;
 }
 
-/* left side */
+/* left page */
 
 .inside-sidebar{
     padding: 5px;
@@ -120,49 +121,212 @@ main .content{
     height: 50px;
 }
 
-/* right part */
+/* right page */
+
+.h2-recently{
+    margin-bottom: 50px;
+}
+
+.h2-john{
+    margin: 20px 0 10px 0;
+}
+
+.p-john{
+    margin: 0px 0 25px 0;
+    color: gray;
+}
+
+
+.upgrade h5{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.row-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-container{
+    width: calc(100% / 6 - 15px);
+    margin-right: 15px;
+}
+
+.cover-container{
+    position: relative;
+}
+
+.cover-container img{
+    width: 100%;
+    display: block;
+}
+
+.cover-container .cover-layover{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-container:hover .cover-layover{
+    opacity: 1;
+}
+
+.cover-container .cover-layover .far{
+    color: white;
+    font-size: 40px;
+}
+
+.cover-container img{
+    width: 100%;
+    display: block;
+}
+
+.album-title{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.album-title h3{
+    color: white;
+}
+
+.album-title p{
+    color: rgb(161, 161, 161);
+}
+
+@media all and (max-width: 991px){
+    .album-container{
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media all and (max-width: 766px){
+    .album-container{
+        width: calc(100% / 2 - 15px);
+    }
+}
 
 
 /* footer */
 
-footer{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: space-between;
+.foot-left, .foot-right{
+    flex-basis: 250px;
+    height: 100%;
 }
 
-.fot-block{
-    background-color: red;
+.foot-mid{
+    flex-basis: 80%;
     height: 100%;
     flex-grow: 1;
-    padding: 10px;
+}
+
+.foot-left{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
 }
 
-.fot-img{
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
+.foot-left-cover{
+    width: 40%;
 }
 
-.fa-ellipsis-v{
-    margin-right: 2px;
-    font-size: 14px;
-}
-
-.fa-bars, .fa-desktop, .fa-volume-up{
-    margin-right: 15px;
-}
-
-.volume-dr-1{
+.foot-left-cover img{
     width: 100%;
-    height: 5px;
-    background: gray;
-    border-radius: 50px;
     display: block;
 }
 
+.foot-left-title{
+    width: 40%;
+    padding: 0 5px; 
+}
 
+.foot-left-title h2{
+    font-size: 14px;
+}
+
+.foot-left-title span{
+    font-size: 12px;
+}
+
+.foot-left-icons{
+    width: 20%;
+    padding: 0 10px;
+}
+
+/* foot-mid */
+
+.foot-mid-top-txt{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-mid-top, .foot-mid-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-play-circle{
+    font-size: 30px;
+}
+
+.foot-mid-volume{
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.foot-mid-volume2{
+    width: 25%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* foot-right */
+
+.foot-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.foot-right-block1, .foot-right-block2{
+    height: 40px;
+    width: 50%;
+}
+
+.foot-right-block1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-right-block2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-right-volume{
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 0 10px;
+}
