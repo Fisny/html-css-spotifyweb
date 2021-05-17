@@ -29,8 +29,8 @@ body{
 }
 
 main .sidebar{
-    background-color: rgb(19, 19, 19);
-    
+    background-color: rgb(19, 19, 19);  
+    height: calc(100vh - 90px);
 }
 
 main .content{
@@ -54,7 +54,7 @@ main .content{
 }
 
 .logo-spoty{
-    width: 95px;
+    width: 150px;
     display: block;
 }
 
@@ -95,6 +95,10 @@ main .content{
     margin: 15px 0;
 }
 
+.home-ecc ul{
+    overflow: hidden;
+}
+
 .home-ecc li{
     list-style-type: none;
     margin: 5px 0;
@@ -108,7 +112,57 @@ main .content{
     color: black;
     text-align: center;
     line-height: 20px;
-    margin-right: 10px;
+}
+
+.artist{
+    background-color: blueviolet;
+    width: 100%;
+    height: 50px;
+}
+
+/* right part */
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fot-block{
+    background-color: red;
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fot-img{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.fa-ellipsis-v{
+    margin-right: 2px;
+    font-size: 14px;
+}
+
+.fa-bars, .fa-desktop, .fa-volume-up{
+    margin-right: 15px;
+}
+
+.volume-dr-1{
+    width: 100%;
+    height: 5px;
+    background: gray;
+    border-radius: 50px;
+    display: block;
 }
 
 
